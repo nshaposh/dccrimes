@@ -24,7 +24,8 @@ mapbox_access_token = 'pk.eyJ1IjoibnNoYXBvc2giLCJhIjoiY2plb2k5d2c0NXBjbDJxbzFuZ3
 
 #df = pd.read_pickle("dccrimes.pkl")    
 
-df = pd.read_csv('Crime_incidents_in_2017.csv')
+#df = pd.read_csv('Crime_incidents_in_2017.csv')
+df = pd.read_csv('https://s3.amazonaws.com/iamdatascientist.org/data/Crime_Incidents_in_2017.csv')
 df["Date/Time"] = pd.to_datetime(df["REPORT_DAT"], format="%Y-%m-%dT%H:%M:%S")
 dt = np.timedelta64(1,'D')
 d0 = np.datetime64("2017-01-01")
