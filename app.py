@@ -14,10 +14,6 @@ import numpy as np
 app = dash.Dash('CrimeApp')
 server = app.server
 
-#if 'DYNO' in os.environ:
-#    app.scripts.append_script({
-#        'external_url': #'https://cdn.rawgit.com/chriddyp/ca0d8f02a1659981a0ea7f013a378bbd/raw/e79f3f789517deec58f41251f7dbb6bee72c#44ab/plotly_ga.js'
-#    })
 
 mapbox_access_token = 'pk.eyJ1IjoibnNoYXBvc2giLCJhIjoiY2plb2k5d2c0NXBjbDJxbzFuZ3R5Zzh1ZSJ9.wwvkxshl2uid_4wbMbnbQA'
 
